@@ -9,6 +9,13 @@ Built with **scikit-learn**, **FastAPI**, and **Streamlit** — following a clea
 ## 📸 Screenshots
 
 <img width="1919" height="824" alt="image" src="https://github.com/user-attachments/assets/15a2bda2-cb48-4f0a-a9ba-94f86eddc159" />
+<img width="1918" height="820" alt="image" src="https://github.com/user-attachments/assets/724077b3-78a6-4b68-9030-50e16736c9a6" />
+<img width="1919" height="832" alt="image" src="https://github.com/user-attachments/assets/37ec8bd8-163b-41f7-a0e2-2a68972fa84e" />
+<img width="1919" height="814" alt="image" src="https://github.com/user-attachments/assets/424fa3d2-f67a-4749-a6c4-5a218ef9cc8b" />
+<img width="1919" height="829" alt="image" src="https://github.com/user-attachments/assets/b451de28-77f1-45e6-9186-e94fdc99e57b" />
+<img width="1919" height="827" alt="image" src="https://github.com/user-attachments/assets/f02db82e-eef8-4d93-a740-e5dee73a624d" />
+
+
 
 
 ---
