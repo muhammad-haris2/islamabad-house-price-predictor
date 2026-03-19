@@ -8,7 +8,8 @@ Built with **scikit-learn**, **FastAPI**, and **Streamlit** — following a clea
 
 ## 📸 Screenshots
 
-> Add screenshots of your app here
+<img width="1919" height="824" alt="image" src="https://github.com/user-attachments/assets/15a2bda2-cb48-4f0a-a9ba-94f86eddc159" />
+
 
 ---
 
