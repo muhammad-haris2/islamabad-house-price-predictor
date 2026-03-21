@@ -22,8 +22,8 @@ Built with **scikit-learn**, **FastAPI**, and **Streamlit** — following a clea
 
 ## 🚀 Features
 
-- 🏘️ Predicts prices for **219 Islamabad locations** (DHA, Bahria Town, MPCHS, G-13, F-7, F-8, B-17 and more)
-- 🤖 **87.4% R² accuracy** using Gradient Boosting Regressor
+- 🏘️ Predicts prices for **108 Islamabad locations** (DHA, Bahria Town, MPCHS, G-13, F-7, F-8, B-17 and more)
+- 🤖 **93.2% R² accuracy** using Gradient Boosting Regressor
 - 📡 **Fresh 2025 data** scraped directly from Zameen.com using Selenium
 - ⚡ **FastAPI backend** with auto-generated Swagger docs at `/docs`
 - 🖥️ **Streamlit frontend** with a clean dark UI
@@ -106,7 +106,7 @@ You have two options:
 pip install selenium webdriver-manager
 python zameen_scraper.py
 ```
-This collects ~1,000 fresh Islamabad house listings directly from Zameen.com and saves them to `data/raw/islamabad_fresh.csv`.
+This collects ~1,500 fresh Islamabad house listings directly from Zameen.com and saves them to `data/raw/islamabad_fresh.csv`.
 
 **Option B — Use an existing dataset**
 
@@ -196,8 +196,8 @@ curl -X POST http://localhost:8000/predict \
 | Detail            | Value                         |
 |-------------------|-------------------------------|
 | Model             | GradientBoostingRegressor     |
-| Training rows     | 949                           |
-| Test R² Score     | 0.8738 (87.4%)                |
+| Training rows     | 1542                           |
+| Test R² Score     | 0.932 (93.2%)                |
 | Cross-val R²      | 0.8333 ± 0.077                |
 | Top feature       | area_marla (63% importance)   |
 | Locations         | 219 unique Islamabad areas    |
