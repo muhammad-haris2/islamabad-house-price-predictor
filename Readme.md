@@ -201,8 +201,6 @@ curl -X POST http://localhost:8000/predict \
 | Cross-val R²      | 0.8333 ± 0.077                |
 | Top feature       | area_marla (63% importance)   |
 | Locations         | 219 unique Islamabad areas    |
-| Price range       | PKR 62 Lakh — PKR 5.5 Crore  |
-| Median price      | PKR 48.5 Lakh                 |
 | Data source       | Zameen.com (scraped 2025)     |
 | Encoding          | LabelEncoder for categoricals |
 
