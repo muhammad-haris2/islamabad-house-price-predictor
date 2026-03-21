@@ -247,6 +247,7 @@ Zero changes needed to the API or Streamlit code.
 
 **Muhammad Haris**
 - GitHub: [@muhammad-haris2](https://github.com/muhammad-haris2)
+- LinkedIn: [@Muhammad-Haris](https://www.linkedin.com/in/muhammad-haris-455166294/)
 - Location: Islamabad, Pakistan 🇵🇰
 
 ---
