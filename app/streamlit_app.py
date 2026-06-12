@@ -11,11 +11,10 @@ Make sure the FastAPI server is running first:
 """
 
 import sys
-import os
 
 # ── Allow imports from project root ──────────────────────────────────────────
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
+import os
 import requests
 import streamlit as st
 from app.components.sidebar         import render_sidebar
@@ -23,8 +22,6 @@ from app.components.input_form      import render_input_form
 from app.components.prediction_card import render_prediction_card
 
 # ── Config ────────────────────────────────────────────────────────────────────
-import os
-import streamlit as st
 
 API_URL = st.secrets.get("API_URL", os.getenv("API_URL", "http://localhost:8000"))
 st.set_page_config(
