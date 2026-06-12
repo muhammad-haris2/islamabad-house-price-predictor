@@ -7,6 +7,7 @@ Run with:
     python -m api.main
 """
 
+import os                          # ADD THIS LINE
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -34,11 +35,12 @@ app.include_router(router)
 def root():
     return {
         "message" : "Islamabad House Price Predictor API",
-        "docs"    : "http://localhost:8000/docs",
-        "health"  : "http://localhost:8000/health",
-        "predict" : "POST http://localhost:8000/predict",
+        "docs"    : "/docs",           # CHANGED from hardcoded localhost
+        "health"  : "/health",         # CHANGED from hardcoded localhost
+        "predict" : "POST /predict",   # CHANGED from hardcoded localhost
     }
 
 
 if __name__ == "__main__":
-    uvicorn.run("api.main:app", host=API_HOST, port=API_PORT, reload=True)
+    port = int(os.environ.get("PORT", API_PORT))   # CHANGED — reads Render's PORT
+    uvicorn.run("api.main:app", host="0.0.0.0", port=port, reload=False)  # CHANGED

@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: islamabad-house-price-api
+    runtime: python
+    buildCommand: "pip install -r requirements.txt && python ml/train.py"
+    startCommand: "python -m api.main"
+    envVars:
+      - key: PORT
+        value: 8000

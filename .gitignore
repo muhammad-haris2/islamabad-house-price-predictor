@@ -33,8 +33,7 @@ Thumbs.db
 # Streamlit cache
 .streamlit/
 
-# ML artifacts — generated locally by running ml/train.py
-ml/artifacts/*.pkl
-
+# ML artifacts — keep committed for deployment
+# ml/artifacts/
 # Processed data — generated locally by running ml/preprocess.py
-data/processed/*.csv
+# data/processed/*.csv

@@ -23,8 +23,10 @@ from app.components.input_form      import render_input_form
 from app.components.prediction_card import render_prediction_card
 
 # ── Config ────────────────────────────────────────────────────────────────────
-API_URL = "http://localhost:8000"
+import os
+import streamlit as st
 
+API_URL = st.secrets.get("API_URL", os.getenv("API_URL", "http://localhost:8000"))
 st.set_page_config(
     page_title = "Islamabad House Price Predictor",
     page_icon  = "🏠",
