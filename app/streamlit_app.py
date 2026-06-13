@@ -11,10 +11,13 @@ Make sure the FastAPI server is running first:
 """
 
 import sys
+import os
 
 # ── Allow imports from project root ──────────────────────────────────────────
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-import os
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(os.path.realpath(__file__))))
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
+    
 import requests
 import streamlit as st
 from app.components.sidebar         import render_sidebar
